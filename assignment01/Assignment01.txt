@@ -1,0 +1,30 @@
+Assignment 1, CSCI 339, fall 2025
+1. Write a short program that can check whether a password contains a digit.
+2. Split the following sentences into an array that contains only its words.
+
+"Tom cried: 'What is going on?'. Then he left the room."
+3. Input a one page long file and tokenize the text into words. Also get rid of "stop words".
+	"Tokenize one paragraph"	
+	Stop words - words that are very common, but don't add any context. A list of stop 
+	words can be googled for the list.
+4. Learn about popular datasets like Ontonotes, Gutenburg project etc. Also explore other 
+datasets, or think of creating your own dataset for the course project.
+
+Ontones- Annotate a large amount AND variety of text, including news, conversational telephone 
+speech, weblogs, usenet newsgroups, broadcast, talk shows, in English Chinese and Arabic.
+Included structural information and some semantic information. This kind of annotation
+enables better automatic semantic (meaning) analysis, but requires a more robust and scalable
+system to use the more complex annotations that enable such analysis.
+
+Gutenberg- Project Gutenberg is a library of over 75,000 free eBooks, with a focus on older
+books who's US copyright has expired. Volunteers digitized and proofread the books in 
+this dataset. The Gutenberg dataset is made up of phrases from the works made available
+because of the Gutenberg project. Punctuation was removed from the text, letters were 
+converted to their base (common) form, and words like "chapter," "scene," and "prologue"
+were removed. 
+
+Yelp/Amazon/IMDB Reviews Dataset- Used for sentiment analysis of the reviews of the product.
+The reviews are simply annotated with a 1 or 0 indicating positive or negative tone. I 
+personally think this one is interesting, because people can be quite... expressive in
+the way that they leave reviews, so it's a great way to start understanding the semantics
+of natural languages. 
