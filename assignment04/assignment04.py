@@ -62,15 +62,15 @@ def main():
     for line in lines:
         print(f"------\n{line}:")
         doc = nlp(line)     # The doc object holds the tokens and info about them
-        tokenize(doc)
-        pos_tag_fine_grained(doc)
-        pos_tag_coarse_grained(doc)
-        named_entities(doc)
-        lemmatize(doc)
-        preprocess(line)
-        print("------\n")
+        tokenize(doc)       # 1. tokenise the following lines of text:
+        pos_tag_fine_grained(doc)       # 2.a Tag the given sentences in (1) with POS tagger -- Fine Grained
+        pos_tag_coarse_grained(doc)     # 2.b Tag the given sentences in (1) with POS tagger -- Coarse Grained
+        named_entities(doc) # 3. Find named Entities from the sentences in (1).
+        lemmatize(doc)      # 4. Lemmatize the sentences given in (1).
+        preprocess(line)    # 6. Create a preprocesso that: Lowercases the text, Lemmatizes each token,
+        print("------\n")       #  Removes punctuation symbols, Removes stop words
 
-    compare_similarity(lines[0], lines[3])
+    compare_similarity(lines[0], lines[3])  # 5. Find similaities between sentences (a) and (d) given in (1).
 
 
 if __name__ == "__main__":
